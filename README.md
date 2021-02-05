@@ -1,7 +1,7 @@
 # MINI APPS COLLECTION
 inspired by [Coding Train](https://www.youtube.com/user/shiffman)
 
-
+* 2017
 
 Featured mini apps:
 
