@@ -20,7 +20,7 @@ class Mandelbrot_Set:
                 cb = b
 
                 n = 0
-                while (n < maxIt):
+                while n < maxIt:
                     aa = a * a - b * b
                     bb = 2 * a * b
                     a = aa + ca
