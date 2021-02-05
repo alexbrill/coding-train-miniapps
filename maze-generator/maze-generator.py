@@ -70,13 +70,13 @@ class Cell:
         bottomI = index(self.i, self.j + 1)
         leftI = index(self.i - 1, self.j)
 
-        if ((topI is not None) and (not grid[topI].visited)):
+        if (topI is not None) and (not grid[topI].visited):
             neighbors.append(grid[topI])
-        if ((rightI is not None) and (not grid[rightI].visited)):
+        if (rightI is not None) and (not grid[rightI].visited):
             neighbors.append(grid[rightI])
-        if ((bottomI is not None) and (not grid[bottomI].visited)):
+        if (bottomI is not None) and (not grid[bottomI].visited):
             neighbors.append(grid[bottomI])
-        if ((leftI is not None) and (not grid[leftI].visited)):
+        if (leftI is not None) and (not grid[leftI].visited):
             neighbors.append(grid[leftI])
 
         if len(neighbors) > 0:
