@@ -16,7 +16,6 @@ def branch(screen, st, end):
                      + (end[1] - st[1]) * (end[1] - st[1]))
 
     if dist > 3:
-        print(dist)
         pX = end[0] - st[0]
         pY = end[1] - st[1]
 
@@ -41,12 +40,13 @@ def run():
             if event.type == pygame.QUIT:
                 pygame.display.quit()
                 sys.exit()
+
             if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
                 branch(screen, (W / 2, 0), (W / 2, H / 4))
 
         screen.fill(GREY)
 
-    pygame.display.update()
+        pygame.display.update()
 
 
 if __name__ == "__main__":

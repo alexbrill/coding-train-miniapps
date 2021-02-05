@@ -1,4 +1,4 @@
-# MINI APPS
+# MINI APPS COLLECTION
 inspired by [Coding Train](https://www.youtube.com/user/shiffman)
 
 
@@ -7,16 +7,16 @@ Featured mini apps:
 
 | Name | Purpose |
 | ------ | ------ |
-| a-star-visualisation | Visualisation of A* Algorithm work process |
-| agar.io | Mini-game agar.io |
-| asteroids | Mini-game Asteroids |
+| a-star-visualisation | Visualisation of A* Algorithm Work Process |
+| agar.io | Mini-Game agar.io |
+| asteroids | Mini-Game Asteroids |
 | double-pendulum | Visualization of Pendulum Movement |
 | fireworks | Visualization of Fireworks |
 | fractal-tree |  |
 | fractal-tree-L-system |  |
 | mandelbrot |  |
-| maze-generator | Visualization of Maze Generation Algorithm work proccess |
+| maze-generator | Visualization of Maze Generation Algorithm Work Proccess |
 | phyllotaxis |  |
 | purple-rain |  |
-| snake | Mini-game Snake |
-| space-invaders | Mini-game Space Invaders |
+| snake | Mini-Game Snake |
+| space-invaders | Mini-Game Space Invaders |
