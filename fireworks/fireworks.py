@@ -28,7 +28,7 @@ class coord:
         self.y = self.y * num
 
     def getRound2DVector(self):
-        return (round(self.x), round(self.y))
+        return round(self.x), round(self.y)
 
 
 gravity = coord(0, 0.5)
@@ -47,7 +47,7 @@ class Particle:
             self.vel = coord(0, randint(-25, -9))
         else:
             self.r = 1
-            self.vel = coord(random() * randint(-6, 6), \
+            self.vel = coord(random() * randint(-6, 6),
                              random() * randint(-6, 8))
 
     def applyForce(self, force):
@@ -59,7 +59,7 @@ class Particle:
                 color[i] = round(color[i] * self.van)
             self.van = self.van - 0.00065
 
-        pg.draw.circle(screen, color, \
+        pg.draw.circle(screen, color,
                        self.coord.getRound2DVector(), self.r)
 
     def update(self):
@@ -68,7 +68,8 @@ class Particle:
         self.coord.add(self.vel)
         self.acc.mult(0)
 
-        if self.coord.y > H: self.exist = False
+        if self.coord.y > H:
+            self.exist = False
 
 
 class Firework:
@@ -77,8 +78,8 @@ class Firework:
         self.particles.append(Particle(x, y))
         self.exploded = False
         self.ended = False
-        self.color = [randint(0, 255), \
-                      randint(0, 255), randint(0, 255)]
+        self.color = [randint(50, 255),
+                      randint(50, 255), randint(50, 255)]
 
     def update(self):
         for particle in self.particles:
@@ -87,7 +88,7 @@ class Firework:
                 self.exploded = True
                 self.particles.remove(particle)
                 for i in range(quan_of_part):
-                    self.particles.append(Particle(particle.coord.x, \
+                    self.particles.append(Particle(particle.coord.x,
                                                    particle.coord.y, False))
 
             if not particle.exist:
