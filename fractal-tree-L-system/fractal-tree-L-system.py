@@ -57,7 +57,7 @@ def draw_tree(screen, sentence, clock, scl, st_angle, st_x, st_y):
             x = x + vect[0]
             y = y + vect[1]
 
-            pygame.draw.circle(screen, (30, 220, 130), \
+            pygame.draw.circle(screen, (30, 220, 130),
                                (round(x), round(y)), 1)
             pygame.draw.line(screen, GREY, (px, py), (x, y), 2)
 
