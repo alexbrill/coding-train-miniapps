@@ -1,4 +1,6 @@
-import pygame, sys, math
+import math
+import pygame
+import sys
 
 SIZE = W, H = (800, 600)
 GREY = (59, 59, 59)
